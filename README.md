@@ -11,3 +11,6 @@ Steps:
 2. Run all the models on all forms of data appropriate.
 3. Run the "analysis" and "attention" notebooks
 4. Run deep gene stuff
+
+Note:
+- Deepgene LR and RF figures and data provided by Curtis
