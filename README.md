@@ -2,8 +2,7 @@
 Data files needed:
 - /home/janaya2/Desktop/ATGC_paper/figures/tumor_classification/data/data.pkl
 - cancerhotspots.v2.maf
-- cases.2020-02-28.json
-- mc3.v0.2.8.PUBLIC.maf
+- cases.2020-02-28.json and mc3.v0.2.8.PUBLIC.maf and 96c file -  but this was for 1st sem stuff so maybe don't include
 - publication_hotspots.vcf 
 - *deepgene stuff*
 
