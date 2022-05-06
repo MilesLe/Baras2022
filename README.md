@@ -5,7 +5,7 @@ Data files needed:
 - cases.2020-02-28.json
 - mc3.v0.2.8.PUBLIC.maf
 - publication_hotspots.vcf 
-- <deepgene stuff>
+- *deepgene stuff*
 
 Steps:
 1. Create a results folder to hold the predictions and weights of the models.
