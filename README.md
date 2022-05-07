@@ -13,6 +13,9 @@ Note: many of the programs take a long time to run (at most an hour) and benefit
 2. Change the file paths to be correct. Below are the file paths in the code and their associated file that you will download.
     - /home/sahn33/Documents/cancerhotspots.v2.maf <= data/cancerhotspots.v2.maf
     - publication_hotspots.vcf <= data/publication_hotspots.vcf
+    - mc3.v0.2.8.PUBLIC.maf <= data/mc3.v0.2.8.PUBLIC.maf
+    - WES_TCGA.96.csv <= data/WES_TCGA.96.csv
+    - cases.2020-02-28.json <= data/cases.2020-02-28.json
 3. Run the run_mil_context.py, run_mil_gene.py, run_nn.py, and run_rf.py programs to train and save the random forests, neural network, and MIL models for both the "gene" and "context" data. run_nn.py and run_rf.py have commented code that needs to be caredully uncommented to run the model on the gene, context, and gene & context data respectively. 
    Here are the saved models (predictions and weights):
     - /home/janaya2/Desktop/ATGC_paper/figures/tumor_classification/data/data.pkl <= data/data.pkl
@@ -24,6 +27,7 @@ Note: many of the programs take a long time to run (at most an hour) and benefit
     - /home/mlee276/Desktop/TCGA-ML-main/results/rf_contexts_predictions.pkl <= results/rf_contexts_predictions.pkl
     - /home/mlee276/Desktop/TCGA-ML-main/results/nn_both_predictions.pkl <= results/nn_both_predictions.pkl
     - /home/mlee276/Desktop/TCGA-ML-main/results/rf_both_predictions.pkl <= results/rf_both_predictions.pkl
+4. Run the mc3_c96_NN notebook to see the results of my tensorflow feedforward simple neural network for the gene count and context data separately. 
 
 (C) Run code to produce figures:
 - analysis-context, analysis-gene, and analysis-gene-context: the figures are produced by calling functions. Some functions produce figures that visualize one model and data combination (ex. random forest on gene data). Therefore, some functions will need to have their input changed to visualize different models and data. Follow the comments for details. 
