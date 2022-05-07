@@ -1,24 +1,6 @@
 # Baras2022
-Data files needed: 
-- /home/janaya2/Desktop/ATGC_paper/figures/tumor_classification/data/data.pkl
-- cancerhotspots.v2.maf
-- cases.2020-02-28.json and mc3.v0.2.8.PUBLIC.maf and 96c file -  but this was for 1st sem stuff so maybe don't include
-- publication_hotspots.vcf 
-- *deepgene stuff*
-
-Steps:
-1. Create a results folder to hold the predictions and weights of the models.
-2. Change the file paths to the correct path 
-3. Run all the models on all forms of data appropriate.
-4. Run the "analysis" and "attention" notebooks
-5. Run deep gene stuff
-
 Note:
 - Deepgene LR and RF figures and data provided by Curtis
-
-
-predictions and weights: 
-
 
 This repository contains the code and data sources created and used by Miles Lee during the 2022 Spring semester in Dr. Alexander Baras' lab. Here are instructions to load the code/data and create the figures in the report. 
 
@@ -31,7 +13,7 @@ Load code:
 2. Change the file paths to be correct. Below are the file paths in the code and their associated file that you will download.
     - /home/sahn33/Documents/cancerhotspots.v2.maf <= data/cancerhotspots.v2.maf
     - publication_hotspots.vcf <= data/publication_hotspots.vcf
-3. Run the ___ programs to train and save the random forests, neural network, and MIL models for both the "gene" and "context" data.
+3. Run the run_mil_context.py, run_mil_gene.py, run_nn.py, and run_rf.py programs to train and save the random forests, neural network, and MIL models for both the "gene" and "context" data. run_nn.py and run_rf.py have commented code that needs to be caredully uncommented to run the model on the gene, context, and gene & context data respectively. 
    Here are the saved models (predictions and weights):
     - /home/janaya2/Desktop/ATGC_paper/figures/tumor_classification/data/data.pkl <= data/data.pkl
     - /home/mlee276/Desktop/TCGA-ML-main/results/mil_gene_predictions.pkl <= results/mil_gene_predictions.pkl
@@ -44,5 +26,6 @@ Load code:
     - /home/mlee276/Desktop/TCGA-ML-main/results/rf_both_predictions.pkl <= results/rf_both_predictions.pkl
 
 Run code to produce figures:
-- 
+- analysis-context, analysis-gene, and analysis-gene-context: the figures are produced by calling functions. Some functions produce figures that visualize one model and data combination (ex. random forest on gene data). Therefore, some functions will need to have their input changed to visualize different models and data. 
+- attention-context and attention-gene: 
 
