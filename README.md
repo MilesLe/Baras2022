@@ -27,7 +27,8 @@ Note: many of the programs take a long time to run (at most an hour) and benefit
     - /home/mlee276/Desktop/TCGA-ML-main/results/rf_contexts_predictions.pkl <= results/rf_contexts_predictions.pkl
     - /home/mlee276/Desktop/TCGA-ML-main/results/nn_both_predictions.pkl <= results/nn_both_predictions.pkl
     - /home/mlee276/Desktop/TCGA-ML-main/results/rf_both_predictions.pkl <= results/rf_both_predictions.pkl
-4. Run the mc3_c96_NN notebook to see the results of my tensorflow feedforward simple neural network for the gene count and context data separately. 
+4. Run the mc3_c96_NN notebook to see the results of my tensorflow feedforward simple neural network for the gene count and context data separately.
+   Note: When switching between the gene and context data, make sure to assign the correct data to the input and label variables (x and y) and correct type of model (model for the context data and model_c96 for the gene data) during training.  
 
 (C) Run code to produce figures:
 - analysis-context, analysis-gene, and analysis-gene-context: the figures are produced by calling functions. Some functions produce figures that visualize one model and data combination (ex. random forest on gene data). Therefore, some functions will need to have their input changed to visualize different models and data. Follow the comments for details. 
