@@ -1,5 +1,5 @@
 # Baras2022
-Data files needed:
+Data files needed: https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/mlee276_jh_edu/EvJK2lp3CnhCiXo7pnIeomQBaD5LUQtAsxztVO3jGF7UAg?e=IEnfSi
 - /home/janaya2/Desktop/ATGC_paper/figures/tumor_classification/data/data.pkl
 - cancerhotspots.v2.maf
 - cases.2020-02-28.json and mc3.v0.2.8.PUBLIC.maf and 96c file -  but this was for 1st sem stuff so maybe don't include
@@ -15,3 +15,6 @@ Steps:
 
 Note:
 - Deepgene LR and RF figures and data provided by Curtis
+
+
+predictions and weights: https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/mlee276_jh_edu/Ehb2IvYAwXxPmIFhiUZQwd8B3y-sltEH1iT7b23yCv2efA?e=GbAcg8
